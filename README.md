@@ -1,6 +1,7 @@
 
 ![[Nmap]]
 
-![[Subdomain enum]]
+![[SubdomainEnum]]
 
 ![[Crasking]]
+![[ShellStabilize]]
