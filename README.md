@@ -4,4 +4,7 @@
 ![[SubdomainEnum]]
 
 ![[Crasking]]
+
 ![[ShellStabilize]]
+
+![[Privesc]]

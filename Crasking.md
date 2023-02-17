@@ -32,3 +32,18 @@ $john-the-ripper --show matt_hash
 matt_key:computer2008
 1 password hash cracked, 0 left
 ```
+
+
+
+## HashCat
+
+hash identify from here
+
+```
+https://hashcat.net/wiki/doku.php?id=example_hashes
+```
+EG:- ``$1$ 500
+
+```
+hashcat -m 500 m4lwhere ~/Tools/SecLists/Passwords/Leaked-Databases/rockyou.txt
+```
