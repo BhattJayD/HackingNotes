@@ -5,8 +5,8 @@ Links
 ~~~
 ###
 
-- [Crasking](./Crasking)
-- [Nmap](./Nmap)
-- [Privesc](./Privesc)
-- [ShellStabilize](./ShellStabilize)
-- [Sub domain Enum](./SubdomainEnum)
+- [Crasking](./Crasking.md)
+- [Nmap](./Nmap.md)
+- [Privesc](./Privesc.md)
+- [ShellStabilize](./ShellStabilize.md)
+- [Sub domain Enum](./SubdomainEnum.md)
