@@ -1,5 +1,30 @@
 
-### Path Injection
+## Finding SUID 
+```
+find / -type f -perm /4000 2>/dev/null
+```
+or 
+```
+find / -type f -perm -u=s 2>/dev/null
+```
+
+
+## Finding HUID 
+```
+find / -type f -perm /2000 2>/dev/null
+```
+or 
+```
+find / -type f -perm -g=s 2>/dev/null
+```
+
+## Finding Capabilities
+```
+getcap -r / 2>/dev/null
+```
+
+
+## Path Injection With Sudo nopasswd
 
 ```
 m4lwhere@previse:/tmp$ sudo -l
