@@ -62,6 +62,10 @@ ffuf -request req.txt -u http://10.10.128.5/ -w ~/Tools/SecLists/Usernames/xato-
 NOTE:- we might need to pass -u with url to use http or https
 
 
+python script :-
+https://github.com/BhattJayD/LessonLearned-BruteForce-Script
+Tested on https://tryhackme.com/room/lessonlearned
+
 ### SQLITE Sql injection
 
 Useful link to follow:-
