@@ -55,4 +55,6 @@ ssh> -L 9001:127.0.0.1:9001
 Forwarding port.
 ```
 
-![[pivoting.png]]
+<!-- ![[pivoting.png]] -->
+
+![pivoting.png](pivoting.png)
