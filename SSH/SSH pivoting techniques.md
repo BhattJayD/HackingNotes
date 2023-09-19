@@ -55,5 +55,4 @@ ssh> -L 9001:127.0.0.1:9001
 Forwarding port.
 ```
 
-![[Pasted image 20230919202601.png]]
-![Pasted\ image\ 20230919202601.png](<./Pasted\ image\ 20230919202601.png>)
+![[pivoting.png]]
