@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DockerBasics/Docker basics.md",
+                "file": "Privesc.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DockerBasics/Docker basics.md",
+                "file": "Privesc.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DockerBasics/Docker basics.md",
+                "file": "Privesc.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DockerBasics/Docker basics.md"
+                "file": "Privesc.md"
               }
             }
           },
@@ -183,8 +183,8 @@
   },
   "active": "e0044c924b13b927",
   "lastOpenFiles": [
-    "SQLI.md",
     "DockerBasics/Docker basics.md",
+    "SQLI.md",
     "DockerBasics",
     "README.md",
     "Pasted image 20230903233728.png",

