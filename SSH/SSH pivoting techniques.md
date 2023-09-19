@@ -6,7 +6,7 @@ ssh-keygen -t ecdsa -b 521
 
 pass path with file name _id_ecdsa_
 
-![[Pasted image 20230919201726.png]]
+![ssh-keygen.png](ssh-keygen.png)
 
 ##### public key to authorised_keys
 
@@ -54,7 +54,5 @@ Commands:
 ssh> -L 9001:127.0.0.1:9001
 Forwarding port.
 ```
-
-<!-- ![[pivoting.png]] -->
 
 ![pivoting.png](pivoting.png)
