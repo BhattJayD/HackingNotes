@@ -37,7 +37,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SSH/SSH pivoting techniques.md",
+                "file": "Privesc.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "55fa013b03cba8a3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "SSTI.md",
                 "mode": "source",
                 "source": false
               }
@@ -122,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "SSH/SSH pivoting techniques.md",
+                "file": "Privesc.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "SSH/SSH pivoting techniques.md",
+                "file": "Privesc.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "SSH/SSH pivoting techniques.md"
+                "file": "Privesc.md"
               }
             }
           },
@@ -195,19 +207,22 @@
   },
   "active": "ee5500bc31858ea2",
   "lastOpenFiles": [
+    "Pasted/ image/ 20230919202601.png.md",
+    "SSTI.md",
+    "Pasted/ image/20230919202601.png.md",
+    "Privesc.md",
+    "Pasted image 20230903233728.png",
+    "image.png",
+    "SSH/SSH pivoting techniques.md",
     "SSH/ssh-keygen.png",
     "SSH/pivoting.png",
-    "Pasted/ image/ 20230919202601.png.md",
     "Pasted/ image",
     "Pasted",
     "SSH/Pasted image 20230919202601.png",
     "SSH/Pasted image 20230919201726.png",
-    "Pasted image 20230903233728.png",
-    "SSH/SSH pivoting techniques.md",
     "DockerBasics/Docker basics.md",
     "Crasking.md",
     "SQLI.md",
-    "Privesc.md",
     "SSH",
     "DockerBasics",
     "README.md",
