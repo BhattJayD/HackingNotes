@@ -9,7 +9,7 @@ find / -type f -perm -u=s 2>/dev/null
 ```
 
 
-## Finding HUID 
+## Finding GUID 
 ```
 find / -type f -perm /2000 2>/dev/null
 ```
@@ -23,7 +23,28 @@ find / -type f -perm -g=s 2>/dev/null
 getcap -r / 2>/dev/null
 ```
 
+## Find running TCP connections
 
+```bash
+netstat -tunlpn
+```
+
+res:-
+```bash
+(Not all processes could be identified, non-owned process info
+ will not be shown, you would have to be root to see it all.)
+Active Internet connections (only servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name    
+tcp        0      0 127.0.0.53:53           0.0.0.0:*               LISTEN      -                   
+tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      -                   
+tcp        0      0 127.0.0.1:3306          0.0.0.0:*               LISTEN      -                   
+tcp6       0      0 :::22                   :::*                    LISTEN      -                   
+tcp6       0      0 :::80                   :::*                    LISTEN      -                   
+udp        0      0 127.0.0.53:53           0.0.0.0:*                           -                   
+udp        0      0 0.0.0.0:161             0.0.0.0:*                           -                   
+udp6       0      0 ::1:161                 :::*                                -                   
+
+```
 ## Path Injection With Sudo nopasswd
 
 ```
