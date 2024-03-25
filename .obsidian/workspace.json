@@ -4,59 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "b74a67d2f482646b",
+        "id": "d1c052eb21b4b12b",
         "type": "tabs",
         "children": [
           {
-            "id": "3b64f2409fd814cc",
+            "id": "3f616fafacb87759",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SQLI.md",
-                "mode": "preview",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e0044c924b13b927",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "SSH/SSH pivoting techniques.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "55fa013b03cba8a3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "SSTI.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "53308b79bfe4aa2c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "SQLI.md",
+                "file": "PrototypePollution/Prototype Population.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -122,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "SSH/SSH pivoting techniques.md",
+                "file": "PrototypePollution/Prototype Population.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "SSH/SSH pivoting techniques.md",
+                "file": "PrototypePollution/Prototype Population.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "SSH/SSH pivoting techniques.md"
+                "file": "PrototypePollution/Prototype Population.md"
               }
             }
           },
@@ -172,7 +135,9 @@
             "state": {
               "type": "all-properties",
               "state": {
-                "sortOrder": "frequency"
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
               }
             }
           }
@@ -193,18 +158,22 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e0044c924b13b927",
+  "active": "3f616fafacb87759",
   "lastOpenFiles": [
+    "DockerBasics/Docker basics.md",
+    "PrototypePollution/Prototype Population.md",
+    "PrototypePollution/protoPopulationOutput.png",
     "Privesc.md",
-    "SSH/PuTTYKeyFile To id_rsa.md",
+    "FUZZING.md",
+    "Crasking.md",
     "SSH/SSH pivoting techniques.md",
+    "PrototypePollution",
+    "SSH/PuTTYKeyFile To id_rsa.md",
     "SSH/ssh-keygen.png",
     "SSH/pivoting.png",
-    "FUZZING.md",
     "Pasted image 20230903233728.png",
     "image.png",
     "Nmap.md",
-    "Crasking.md",
     "rubyCapChown.png",
     "Pasted.md",
     "SSTI.md",
@@ -215,7 +184,6 @@
     "Pasted",
     "SSH/Pasted image 20230919202601.png",
     "SSH/Pasted image 20230919201726.png",
-    "DockerBasics/Docker basics.md",
     "SSH",
     "DockerBasics",
     "README.md"
