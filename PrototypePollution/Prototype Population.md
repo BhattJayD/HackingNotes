@@ -1,7 +1,8 @@
 ref:- 
-https://book.hacktricks.xyz/pentesting-web/deserialization/nodejs-proto-prototype-pollution
-https://portswigger.net/web-security/prototype-pollution
-https://app.hackthebox.com/challenges/Gunship
+
+1. https://book.hacktricks.xyz/pentesting-web/deserialization/nodejs-proto-prototype-pollution
+2. https://portswigger.net/web-security/prototype-pollution
+3. https://app.hackthebox.com/challenges/Gunship
 
 
 
