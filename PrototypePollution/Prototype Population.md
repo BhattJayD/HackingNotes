@@ -38,7 +38,7 @@ print(r.text)
 print(requests.get(TARGET_URL+'/static/out').text)
 ```
 
-![[protoPopulationOutput.png]]
+![protoPopulationOutput.png](protoPopulationOutput.png)
 
 
 #### with docker
