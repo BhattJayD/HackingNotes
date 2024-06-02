@@ -163,3 +163,12 @@ username=admin&password=aa'union select (group_concat(password)),(group_concat(u
   ]
 ]
 ```
+
+
+### Use full sql commands
+
+##### Print in JSON
+
+```sql
+select * from table \G;
+```

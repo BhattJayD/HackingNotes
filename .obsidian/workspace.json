@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "FUZZING.md",
+                "file": "SQLI.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "FUZZING.md",
+                "file": "SQLI.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "FUZZING.md",
+                "file": "SQLI.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "FUZZING.md"
+                "file": "SQLI.md"
               }
             }
           },
@@ -160,12 +160,12 @@
   },
   "active": "3f616fafacb87759",
   "lastOpenFiles": [
+    "FUZZING.md",
     "Crasking.md",
     "PrototypePollution/Prototype Population.md",
     "DockerBasics/Docker basics.md",
     "PrototypePollution/protoPopulationOutput.png",
     "Privesc.md",
-    "FUZZING.md",
     "SSH/SSH pivoting techniques.md",
     "PrototypePollution",
     "SSH/PuTTYKeyFile To id_rsa.md",
