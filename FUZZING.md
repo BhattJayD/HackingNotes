@@ -47,3 +47,11 @@ fuzz through some proxy
 ```bash
 ffuf -request req -request-proto http -w ~/Tools/SecLists/Passwords/Leaked-Databases/rockyou.txt -x http://127.0.0.1:8081
 ```
+
+Follow redirect 
+
+-r is use for Follow redirects default is set to false
+
+```bash
+ffuf -request req -request-proto http -w ~/Tools/SecLists/Passwords/Leaked-Databases/rockyou.txt -x http://127.0.0.1:8081 -r
+```
