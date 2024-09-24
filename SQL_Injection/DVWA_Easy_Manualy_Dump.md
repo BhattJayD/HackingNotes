@@ -9,6 +9,7 @@ union select 1,gRoUp_cOncaT(0x7c,schema_name,0x7c) fRoM information_schema.schem
 ```
 
 ![DVWA_LOW_DB_NAME.png](SQL_Injection/Images/DVWA_LOW_COLUMNNAME.png)
+![DVWA_LOW_DB_NAME.png](images/DVWA_LOW_COLUMNNAME.png)
 
 ### Extract tables from database
 
