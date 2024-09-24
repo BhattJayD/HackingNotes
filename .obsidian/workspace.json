@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "FUZZING.md",
+                "file": "SQL_Injection/DVWA_Easy_Manualy_Dump.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "FUZZING.md",
+                "file": "SQL_Injection/DVWA_Easy_Manualy_Dump.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "FUZZING.md",
+                "file": "SQL_Injection/DVWA_Easy_Manualy_Dump.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "FUZZING.md"
+                "file": "SQL_Injection/DVWA_Easy_Manualy_Dump.md"
               }
             }
           },
@@ -160,10 +160,23 @@
   },
   "active": "3f616fafacb87759",
   "lastOpenFiles": [
+    "SQL_Injection/Images/DVWA_LOW_DATA_DUMP.png",
+    "SQL_Injection/DVWA_Easy_Manualy_Dump.md",
+    "SQL_Injection/Images/DVWA_LOW_COLUMNNAME.png",
+    "SQL_Injection/Images/DVWA_LOW_DB_NAME.png",
+    "SQL_Injection/Images/DVWA_LOW_TABLENAME.png",
+    "Pasted image 20230903233728.png",
+    "SQL_Injection/SQLI.md",
+    "SQL_Injection/Images",
+    "Untitled",
+    "README.md",
+    "Nmap.md",
+    "rubyCapChown.png",
+    "ShellStabilize.md",
+    "SQL_Injection",
+    "FUZZING.md",
     "SSH/pivoting.png",
     "Crasking.md",
-    "SQLI.md",
-    "FUZZING.md",
     "PrototypePollution/Prototype Population.md",
     "DockerBasics/Docker basics.md",
     "PrototypePollution/protoPopulationOutput.png",
@@ -172,20 +185,14 @@
     "PrototypePollution",
     "SSH/PuTTYKeyFile To id_rsa.md",
     "SSH/ssh-keygen.png",
-    "Pasted image 20230903233728.png",
     "image.png",
-    "Nmap.md",
-    "rubyCapChown.png",
     "Pasted.md",
     "SSTI.md",
     "Pasted/ image/ 20230919202601.png.md",
     "Pasted/ image/20230919202601.png.md",
     "Pasted/ image",
     "Pasted",
-    "SSH/Pasted image 20230919202601.png",
-    "SSH/Pasted image 20230919201726.png",
     "SSH",
-    "DockerBasics",
-    "README.md"
+    "DockerBasics"
   ]
 }

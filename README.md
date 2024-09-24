@@ -11,4 +11,4 @@ Links
 - [ShellStabilize](./ShellStabilize.md)
 - [Sub domain Enum](./SubdomainEnum.md)
 - [MobileApplicationPenetrationTestingNotes](./MobileApplicationPenetrationTestingNotes)
-- [SQLI](./SQLI.md)
+- [SQLI](SQLI.md)
