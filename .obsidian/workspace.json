@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SQL_Injection/DVWA_Easy_Manualy_Dump.md",
-                "mode": "source",
+                "file": "SQL_Injection/SQLI.md",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "SQL_Injection/DVWA_Easy_Manualy_Dump.md",
+                "file": "SQL_Injection/SQLI.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "SQL_Injection/DVWA_Easy_Manualy_Dump.md",
+                "file": "SQL_Injection/SQLI.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "SQL_Injection/DVWA_Easy_Manualy_Dump.md"
+                "file": "SQL_Injection/SQLI.md"
               }
             }
           },
@@ -160,34 +160,37 @@
   },
   "active": "3f616fafacb87759",
   "lastOpenFiles": [
-    "SQL_Injection/Images/DVWA_LOW_DATA_DUMP.png",
+    "README.md",
+    "rubyCapChown.png",
+    "Privesc.md",
+    "DockerBasics/Docker basics.md",
+    "MobileApplicationPenetrationTestingNotes/Resources.md",
+    "MobileApplicationPenetrationTestingNotes/README.md",
+    "MobileApplicationPenetrationTestingNotes/MobilePenTestProcess.md",
+    "PrototypePollution/Prototype Population.md",
+    "Crasking.md",
+    "SSTI.md",
+    "ShellStabilize.md",
+    "Pasted image 20230903233728.png",
+    "Nmap.md",
+    "image.png",
+    "FUZZING.md",
+    "SQL_Injection/SQLI.md",
     "SQL_Injection/DVWA_Easy_Manualy_Dump.md",
+    "SQL_Injection/Images/DVWA_LOW_DATA_DUMP.png",
     "SQL_Injection/Images/DVWA_LOW_COLUMNNAME.png",
     "SQL_Injection/Images/DVWA_LOW_DB_NAME.png",
     "SQL_Injection/Images/DVWA_LOW_TABLENAME.png",
-    "Pasted image 20230903233728.png",
-    "SQL_Injection/SQLI.md",
     "SQL_Injection/Images",
     "Untitled",
-    "README.md",
-    "Nmap.md",
-    "rubyCapChown.png",
-    "ShellStabilize.md",
     "SQL_Injection",
-    "FUZZING.md",
     "SSH/pivoting.png",
-    "Crasking.md",
-    "PrototypePollution/Prototype Population.md",
-    "DockerBasics/Docker basics.md",
     "PrototypePollution/protoPopulationOutput.png",
-    "Privesc.md",
     "SSH/SSH pivoting techniques.md",
     "PrototypePollution",
     "SSH/PuTTYKeyFile To id_rsa.md",
     "SSH/ssh-keygen.png",
-    "image.png",
     "Pasted.md",
-    "SSTI.md",
     "Pasted/ image/ 20230919202601.png.md",
     "Pasted/ image/20230919202601.png.md",
     "Pasted/ image",
