@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SQL_Injection/SQLI.md",
-                "mode": "preview",
+                "file": "SQL_Injection/DVWA_Easy_Manualy_Dump.md",
+                "mode": "source",
                 "source": false
               }
             }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "SQL_Injection/SQLI.md",
+                "file": "SQL_Injection/DVWA_Easy_Manualy_Dump.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "SQL_Injection/SQLI.md",
+                "file": "SQL_Injection/DVWA_Easy_Manualy_Dump.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "SQL_Injection/SQLI.md"
+                "file": "SQL_Injection/DVWA_Easy_Manualy_Dump.md"
               }
             }
           },
@@ -160,6 +160,9 @@
   },
   "active": "3f616fafacb87759",
   "lastOpenFiles": [
+    "SQL_Injection/Images/DVWA_LOW_COLUMNNAME.png",
+    "SQL_Injection/DVWA_Easy_Manualy_Dump.md",
+    "SQL_Injection/SQLI.md",
     "README.md",
     "rubyCapChown.png",
     "Privesc.md",
@@ -175,10 +178,7 @@
     "Nmap.md",
     "image.png",
     "FUZZING.md",
-    "SQL_Injection/SQLI.md",
-    "SQL_Injection/DVWA_Easy_Manualy_Dump.md",
     "SQL_Injection/Images/DVWA_LOW_DATA_DUMP.png",
-    "SQL_Injection/Images/DVWA_LOW_COLUMNNAME.png",
     "SQL_Injection/Images/DVWA_LOW_DB_NAME.png",
     "SQL_Injection/Images/DVWA_LOW_TABLENAME.png",
     "SQL_Injection/Images",
