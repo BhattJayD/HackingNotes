@@ -160,8 +160,9 @@
   },
   "active": "3f616fafacb87759",
   "lastOpenFiles": [
-    "SQL_Injection/Images/DVWA_LOW_COLUMNNAME.png",
+    "SQL_Injection/Images/DVWA_LOW_DB_NAME.png",
     "SQL_Injection/DVWA_Easy_Manualy_Dump.md",
+    "SQL_Injection/Images/DVWA_LOW_COLUMNNAME.png",
     "SQL_Injection/SQLI.md",
     "README.md",
     "rubyCapChown.png",
@@ -179,7 +180,6 @@
     "image.png",
     "FUZZING.md",
     "SQL_Injection/Images/DVWA_LOW_DATA_DUMP.png",
-    "SQL_Injection/Images/DVWA_LOW_DB_NAME.png",
     "SQL_Injection/Images/DVWA_LOW_TABLENAME.png",
     "SQL_Injection/Images",
     "Untitled",
