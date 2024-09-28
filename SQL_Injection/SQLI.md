@@ -40,7 +40,7 @@ https://book.hacktricks.xyz/pentesting-web/sql-injection
 ### Username Brutforce with FFUF
 
 simple request
-![Username_Brutforce_with_FFUF](Images/Username_Brutforce_with_FFUF.png)
+![Username_Brutforce_with_FFUF_00](Images/Username_Brutforce_with_FFUF_00.png)
 
 save req to req.txt
 
@@ -68,7 +68,7 @@ run below FFUF command
 ffuf -request req.txt -u http://10.10.128.5/ -w ~/Tools/SecLists/Usernames/xato-net-10-million-usernames-dup.txt
 ```
 
-![[Pasted image 20230903233728.png]]
+![Username_Brutforce_with_FFUF_01](Images/Username_Brutforce_with_FFUF_01.png)
 NOTE:- we might need to pass -u with url to use http or https
 
 python script :-
