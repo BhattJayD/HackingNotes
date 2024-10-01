@@ -25,8 +25,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SQL_Injection/SQLI.md",
-                "mode": "source",
+                "file": "SQL_Injection/README.md",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -108,7 +108,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "SQL_Injection/SQLI.md",
+                "file": "SQL_Injection/README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -125,7 +125,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "SQL_Injection/SQLI.md",
+                "file": "SQL_Injection/README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -148,7 +148,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "SQL_Injection/SQLI.md"
+                "file": "SQL_Injection/README.md"
               }
             }
           },
@@ -183,16 +183,18 @@
   },
   "active": "7f6a7a8ec20ae071",
   "lastOpenFiles": [
+    "SQL_Injection/SQLI.md",
+    "SQL_Injection/DVWA_Easy_Manualy_Dump.md",
+    "SQL_Injection/README.md",
+    "README.md",
+    "SSTI.md",
     "SQL_Injection/DVWA_Medium_Manualy_Dump.md",
     "SQL_Injection/Images/DVWA_MEDIUM_TABLE_COLUMN_NAME.png",
     "SQL_Injection/Images/DVWA_MEDIUM_DATA_DUMP.png",
-    "SQL_Injection/DVWA_Easy_Manualy_Dump.md",
     "SQL_Injection/Images/DVWA_MEDIUM_COLUMN_NAME.png",
     "SQL_Injection/Images/DVWA_MEDIUM_TABLENAME.png",
     "SQL_Injection/Images/DVWA_MEDIUM_DB_NAMES.png",
     "SQL_Injection/Images/DVWA_LOW_TABLENAME.png",
-    "SQL_Injection/SQLI.md",
-    "README.md",
     "FUZZING.md",
     "MobileApplicationPenetrationTestingNotes/MobilePenTestProcess.md",
     "MobileApplicationPenetrationTestingNotes/README.md",
@@ -208,7 +210,6 @@
     "DockerBasics/Docker basics.md",
     "PrototypePollution/Prototype Population.md",
     "Crasking.md",
-    "SSTI.md",
     "SQL_Injection/Images",
     "Untitled",
     "SQL_Injection",
