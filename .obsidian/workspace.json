@@ -8,7 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "7f6a7a8ec20ae071",
+            "id": "bd58c64adb7532e7",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -18,8 +18,31 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "7f6a7a8ec20ae071",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "SQL_Injection/SQLI.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "8bb7c139d3a293e1",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "SQL_Injection/Images/DVWA_MEDIUM_DATA_DUMP.png"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +108,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "SQL_Injection/DVWA_Easy_Manualy_Dump.md",
+                "file": "SQL_Injection/SQLI.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +125,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "SQL_Injection/DVWA_Easy_Manualy_Dump.md",
+                "file": "SQL_Injection/SQLI.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +148,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "SQL_Injection/DVWA_Easy_Manualy_Dump.md"
+                "file": "SQL_Injection/SQLI.md"
               }
             }
           },
@@ -161,9 +184,16 @@
   "active": "7f6a7a8ec20ae071",
   "lastOpenFiles": [
     "SQL_Injection/DVWA_Medium_Manualy_Dump.md",
+    "SQL_Injection/Images/DVWA_MEDIUM_TABLE_COLUMN_NAME.png",
+    "SQL_Injection/Images/DVWA_MEDIUM_DATA_DUMP.png",
+    "SQL_Injection/DVWA_Easy_Manualy_Dump.md",
+    "SQL_Injection/Images/DVWA_MEDIUM_COLUMN_NAME.png",
+    "SQL_Injection/Images/DVWA_MEDIUM_TABLENAME.png",
+    "SQL_Injection/Images/DVWA_MEDIUM_DB_NAMES.png",
+    "SQL_Injection/Images/DVWA_LOW_TABLENAME.png",
+    "SQL_Injection/SQLI.md",
     "README.md",
     "FUZZING.md",
-    "SQL_Injection/SQLI.md",
     "MobileApplicationPenetrationTestingNotes/MobilePenTestProcess.md",
     "MobileApplicationPenetrationTestingNotes/README.md",
     "MobileApplicationPenetrationTestingNotes/Resources.md",
@@ -173,22 +203,15 @@
     "image.png",
     "Nmap.md",
     "Untitled.md",
-    "SQL_Injection/DVWA_Easy_Manualy_Dump.md",
     "SQL_Injection/Images/DVWA_LOW_DB_NAME.png",
-    "SQL_Injection/Images/DVWA_LOW_COLUMNNAME.png",
-    "rubyCapChown.png",
     "Privesc.md",
     "DockerBasics/Docker basics.md",
     "PrototypePollution/Prototype Population.md",
     "Crasking.md",
     "SSTI.md",
-    "SQL_Injection/Images/DVWA_LOW_DATA_DUMP.png",
-    "SQL_Injection/Images/DVWA_LOW_TABLENAME.png",
     "SQL_Injection/Images",
     "Untitled",
     "SQL_Injection",
-    "SSH/pivoting.png",
-    "PrototypePollution/protoPopulationOutput.png",
     "SSH/SSH pivoting techniques.md",
     "PrototypePollution",
     "SSH/PuTTYKeyFile To id_rsa.md",
