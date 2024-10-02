@@ -25,8 +25,20 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SQL_Injection/README.md",
+                "file": "MobileApplicationPenetrationTestingNotes/Resources.md",
                 "mode": "preview",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a0c5cdbcfe1c8e5f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "MobileApplicationPenetrationTestingNotes/Tools.md",
+                "mode": "source",
                 "source": false
               }
             }
@@ -42,7 +54,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -108,7 +120,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "SQL_Injection/README.md",
+                "file": "MobileApplicationPenetrationTestingNotes/Tools.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -125,7 +137,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "SQL_Injection/README.md",
+                "file": "MobileApplicationPenetrationTestingNotes/Tools.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -148,7 +160,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "SQL_Injection/README.md"
+                "file": "MobileApplicationPenetrationTestingNotes/Tools.md"
               }
             }
           },
@@ -181,11 +193,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "7f6a7a8ec20ae071",
+  "active": "a0c5cdbcfe1c8e5f",
   "lastOpenFiles": [
+    "MobileApplicationPenetrationTestingNotes/Resources.md",
+    "MobileApplicationPenetrationTestingNotes/Tools.md",
+    "MobileApplicationPenetrationTestingNotes/README.md",
+    "MobileApplicationPenetrationTestingNotes/MobilePenTestProcess.md",
     "SQL_Injection/SQLI.md",
-    "SQL_Injection/DVWA_Easy_Manualy_Dump.md",
     "SQL_Injection/README.md",
+    "SQL_Injection/DVWA_Easy_Manualy_Dump.md",
     "README.md",
     "SSTI.md",
     "SQL_Injection/DVWA_Medium_Manualy_Dump.md",
@@ -196,15 +212,11 @@
     "SQL_Injection/Images/DVWA_MEDIUM_DB_NAMES.png",
     "SQL_Injection/Images/DVWA_LOW_TABLENAME.png",
     "FUZZING.md",
-    "MobileApplicationPenetrationTestingNotes/MobilePenTestProcess.md",
-    "MobileApplicationPenetrationTestingNotes/README.md",
-    "MobileApplicationPenetrationTestingNotes/Resources.md",
     "ShellStabilize.md",
     "Pasted image 20230903233728.png",
     "Pasted image 20240926193120.png",
     "image.png",
     "Nmap.md",
-    "Untitled.md",
     "SQL_Injection/Images/DVWA_LOW_DB_NAME.png",
     "Privesc.md",
     "DockerBasics/Docker basics.md",
