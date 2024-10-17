@@ -1,4 +1,4 @@
-##### gen ecdsa key
+#### gen ecdsa key
 
 ```bash
 ssh-keygen -t ecdsa -b 521
@@ -8,7 +8,7 @@ pass path with file name _id_ecdsa_
 
 ![ssh-keygen.png](ssh-keygen.png)
 
-##### public key to authorised_keys
+#### public key to authorised_keys
 
 with echo move public key to authorised keys
 
@@ -16,13 +16,13 @@ with echo move public key to authorised keys
 echo "ecdsa-sha2-nistp521 AAAAE2VjZHNhLXNoYTItbmlzdHA1MjEAAAAIbmlzdHA1MjEAAACFBAF8RoPKOXwQx2cl9ChH2VbZif9nsWHPE8UAMAdK7eMyUzBHvHsr9QeRmtVnO+V1nZh3q6EPW04k6mF8jbZbNTGBGAGvyQ0qMiuT68oR64ouKCqy9rro7+uWl3738G6HSqge5rv35gwwGe2ZVNlx4SsuI+PsRFSvqi09j0IuHQEqXTEbPw== splitunknown@splitunknown" >> authorized_keys
 ```
 
-##### ssh to server
+#### ssh to server
 
 ```bash
 ssh -i key/id_ecdsa apaar@10.10.10.162
 ```
 
-##### PIVOTING
+#### PIVOTING after SSH Login
 
 ```bash
 netstat -nlpt
@@ -56,3 +56,13 @@ Forwarding port.
 ```
 
 ![pivoting.png](pivoting.png)
+
+#### PIVOTING while SSH Login
+
+```bash
+sudo ssh -L LocalPort:LHost:RPORT  user@ip
+```
+
+```bash
+sudo ssh -L 80:127.0.0.1:80  user@ip
+```
