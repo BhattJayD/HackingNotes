@@ -8,7 +8,7 @@ Links
 
 - [Crasking](./Crasking.md)
 - [Nmap](./Nmap.md)
-- [Privesc](./Privesc.md)
+- [Privesc](Privesc.md)
 - [ShellStabilize](./ShellStabilize.md)
 - [FUZZING](./FUZZING.md)
 - [MobileApplicationPenetrationTestingNotes](./MobileApplicationPenetrationTestingNotes/README.md)

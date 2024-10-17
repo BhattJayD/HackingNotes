@@ -41,7 +41,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Privesc.md",
+                "file": "Privesc/Privesc.md",
                 "mode": "source",
                 "source": false
               },
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Privesc.md",
+                "file": "Privesc/Privesc.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -153,7 +153,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Privesc.md",
+                "file": "Privesc/Privesc.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -180,7 +180,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Privesc.md"
+                "file": "Privesc/Privesc.md"
               },
               "icon": "lucide-list",
               "title": "Outline of Privesc"
@@ -219,13 +219,20 @@
   },
   "active": "a0c5cdbcfe1c8e5f",
   "lastOpenFiles": [
-    "ttypushback01.png",
-    "Privesc.md",
-    "ttypushback03.png",
-    "ttypushback02.png",
-    "ansiblePrivesc02.png",
     "README.md",
-    "ansiblePrivesc01.png",
+    "ShellStabilize.md",
+    "Privesc/Privesc.md",
+    "SQL_Injection/Images/DVWA_MEDIUM_DATA_DUMP.png",
+    "SQL_Injection/DVWA_Easy_Manualy_Dump.md",
+    "Privesc/Images/rubyCapChown.png",
+    "Privesc/Images/ansiblePrivesc02.png",
+    "Privesc/Images/ttypushback01.png",
+    "Privesc/Images",
+    "Untitled 1",
+    "Privesc",
+    "Privesc/Images/ttypushback03.png",
+    "Privesc/Images/ttypushback02.png",
+    "Privesc/Images/ansiblePrivesc01.png",
     "Nmap.md",
     "SSH/SSH pivoting techniques.md",
     "SSH/PuTTYKeyFile To id_rsa.md",
@@ -236,20 +243,15 @@
     "MobileApplicationPenetrationTestingNotes/MobilePenTestProcess.md",
     "SQL_Injection/SQLI.md",
     "SQL_Injection/README.md",
-    "SQL_Injection/DVWA_Easy_Manualy_Dump.md",
     "SSTI.md",
     "SQL_Injection/DVWA_Medium_Manualy_Dump.md",
     "SQL_Injection/Images/DVWA_MEDIUM_TABLE_COLUMN_NAME.png",
-    "SQL_Injection/Images/DVWA_MEDIUM_DATA_DUMP.png",
     "SQL_Injection/Images/DVWA_MEDIUM_COLUMN_NAME.png",
-    "SQL_Injection/Images/DVWA_MEDIUM_TABLENAME.png",
     "FUZZING.md",
-    "ShellStabilize.md",
     "DockerBasics/Docker basics.md",
     "PrototypePollution/Prototype Population.md",
     "Crasking.md",
     "SQL_Injection/Images",
-    "Untitled",
     "SQL_Injection",
     "PrototypePollution",
     "Pasted.md",
