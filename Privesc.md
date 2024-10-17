@@ -176,8 +176,8 @@ sudo -u wilbur /usr/bin/ansible-playbook /opt/test_playbooks/../../tmp/a.yml
 ![ansiblePrivesc02.png](./ansiblePrivesc02.png)
 
 ref:-
-https://tryhackme.com/r/room/backtrack
-https://youtu.be/FPD3BFv_f_Y?si=Jwof3PkTrzcBqBQY&t=2343
+- https://tryhackme.com/r/room/backtrack
+- https://youtu.be/FPD3BFv_f_Y?si=Jwof3PkTrzcBqBQY&t=2343
 
 #### Privesc with ttypushback
 
@@ -235,6 +235,6 @@ cat a.txt
 ![ttypushback03.png](./ttypushback03.png)
 
 ref:-
-https://tryhackme.com/r/room/backtrack
-https://www.errno.fr/TTYPushback.html
-https://youtu.be/FPD3BFv_f_Y?si=j0MjXQytaRM2WRQe&t=5466
+- https://tryhackme.com/r/room/backtrack
+- https://www.errno.fr/TTYPushback.html
+- https://youtu.be/FPD3BFv_f_Y?si=j0MjXQytaRM2WRQe&t=5466
