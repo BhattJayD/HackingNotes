@@ -4,6 +4,8 @@
 Links
 ```
 
+![Check out my badge](https://tryhackme.com/api/v2/badges/public-profile?userPublicId=41286)
+
 ###
 
 - [Crasking](./Crasking.md)

@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Privesc/Privesc.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Privesc"
+              "title": "README"
             }
           },
           {
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Privesc/Privesc.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -144,7 +144,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Privesc"
+              "title": "Backlinks for README"
             }
           },
           {
@@ -153,12 +153,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Privesc/Privesc.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Privesc"
+              "title": "Outgoing links from README"
             }
           },
           {
@@ -180,10 +180,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Privesc/Privesc.md"
+                "file": "README.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Privesc"
+              "title": "Outline of README"
             }
           },
           {
@@ -219,9 +219,9 @@
   },
   "active": "a0c5cdbcfe1c8e5f",
   "lastOpenFiles": [
+    "Privesc/Privesc.md",
     "README.md",
     "ShellStabilize.md",
-    "Privesc/Privesc.md",
     "SQL_Injection/Images/DVWA_MEDIUM_DATA_DUMP.png",
     "SQL_Injection/DVWA_Easy_Manualy_Dump.md",
     "Privesc/Images/rubyCapChown.png",
