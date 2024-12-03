@@ -9,7 +9,7 @@ stty raw -echo;fg
 ```
 
 ```bash
-stty rows 24 columns 80
+stty rows 47 columns 211
 ```
 
 ```bash
