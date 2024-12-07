@@ -15,3 +15,7 @@ stty rows 47 columns 211
 ```bash
 export TERM=xterm-256color
 ```
+
+```bash
+alias l="ls -lath --color"
+```
