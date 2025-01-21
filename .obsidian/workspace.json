@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/Useful thing to look for.md",
+                "file": "SQL_Injection/DVWA_Easy_Manualy_Dump.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Useful thing to look for"
+              "title": "DVWA_Easy_Manualy_Dump"
             }
           },
           {
@@ -233,15 +233,18 @@
   },
   "active": "bf9871c3a709dfe0",
   "lastOpenFiles": [
-    "SSTI.md",
+    "SQL_Injection/SQL Light Injection.md",
+    "SQL_Injection/Images/SQL_LIGHT_SELECT.png",
+    "Rev_Shell.md",
+    "SQL_Injection/DVWA_Easy_Manualy_Dump.md",
     "Linux/Useful thing to look for.md",
+    "SSTI.md",
     "Linux",
     "FUZZING.md",
     "README.md",
     "Privesc/Privesc.md",
     "ShellStabilize.md",
     "SQL_Injection/Images/DVWA_MEDIUM_DATA_DUMP.png",
-    "SQL_Injection/DVWA_Easy_Manualy_Dump.md",
     "Privesc/Images/rubyCapChown.png",
     "Privesc/Images/ansiblePrivesc02.png",
     "Privesc/Images/ttypushback01.png",
@@ -263,7 +266,6 @@
     "SQL_Injection/README.md",
     "SQL_Injection/DVWA_Medium_Manualy_Dump.md",
     "SQL_Injection/Images/DVWA_MEDIUM_TABLE_COLUMN_NAME.png",
-    "SQL_Injection/Images/DVWA_MEDIUM_COLUMN_NAME.png",
     "DockerBasics/Docker basics.md",
     "PrototypePollution/Prototype Population.md",
     "Crasking.md",
