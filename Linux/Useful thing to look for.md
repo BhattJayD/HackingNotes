@@ -117,3 +117,23 @@ Checking system commands...
   Performing 'shared libraries' checks
     Checking for preloading variables                        [ None found ]
 ```
+
+
+#### Check loggedin shell or Display All Processes in a Hierarchical Tree with ps Command
+
+```bash
+ps -eaf --forest
+```
+
+output:- 
+
+```bash
+root       822     1  0 13:16 ?        00:00:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+root       843     1  0 13:16 ttyS0    00:00:00 /sbin/agetty -o -p -- \u --keep-baud 115200,38400,9600 ttyS0 vt220
+root       848     1  0 13:16 ?        00:00:00 /usr/sbin/sshd -D
+root      1549   848  0 13:31 ?        00:00:00  \_ sshd: magna [priv]
+magna     1668  1549  0 13:32 ?        00:00:00      \_ sshd: magna@pts/0
+magna     1676  1668  0 13:32 pts/0    00:00:00          \_ -bash
+magna     1764  1676  0 13:35 pts/0    00:00:00              \_ ps -eaf --forest
+root       849     1  0 13:16 tty1     00:00:00 /sbin/agetty -o -p -- \u --noclear tty1 linux
+```
