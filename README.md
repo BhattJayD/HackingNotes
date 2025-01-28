@@ -4,8 +4,6 @@
 Links
 ```
 
-![Check out my badge](https://tryhackme-badges.s3.amazonaws.com/SplitUnknown.png)
-
 ###
 
 - [Crasking](./Crasking.md)
