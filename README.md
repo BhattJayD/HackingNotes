@@ -1,4 +1,4 @@
-###### My Hacking Notes :) ![heart](https://github.githubassets.com/images/icons/emoji/unicode/2764.png) 
+###### My Hacking Notes :) [![heart](https://github.githubassets.com/images/icons/emoji/unicode/2764.png)](https://www.youtube.com/@SplitUnknown) 
 
 ```
 Links
