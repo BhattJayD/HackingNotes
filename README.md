@@ -3,13 +3,13 @@
 ```
 Links
 ```
-[![TryHackMe Badge](https://tryhackme-badges.s3.amazonaws.com/SplitUnknown.png)](https://tryhackme.com/p/SplitUnknown)
 
+[![TryHackMe Badge](https://tryhackme-badges.s3.amazonaws.com/SplitUnknown.png)](https://tryhackme.com/p/SplitUnknown)
 
 ###
 
 - [Crasking](./Crasking.md)
-- [Nmap](/Namp/Nmap.md)
+- [Nmap](Namp/Nmap.md)
 - [Privesc](Privesc/Privesc.md)
 - [ShellStabilize](./ShellStabilize.md)
 - [FUZZING](./FUZZING.md)
