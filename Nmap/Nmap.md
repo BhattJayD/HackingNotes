@@ -1,5 +1,4 @@
-The aliases can be found here.
-ref:- https://github.com/BhattJayD/my-useful-comands-and-scripts
+The [Aliases](https://github.com/BhattJayD/my-useful-comands-and-scripts) can be found here.
 
 ### Initial scan
 ```
