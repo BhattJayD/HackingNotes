@@ -9,7 +9,7 @@ Links
 ###
 
 - [Crasking](./Crasking.md)
-- [Nmap](Namp/Nmap.md)
+- [Nmap](Nmap/Nmap.md)
 - [Privesc](Privesc/Privesc.md)
 - [ShellStabilize](./ShellStabilize.md)
 - [FUZZING](./FUZZING.md)
