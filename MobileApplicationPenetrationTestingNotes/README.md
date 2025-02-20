@@ -1,2 +1,3 @@
 - [Resources](./Resources.md)
 - [Mobile PenTest Process](./MobilePenTestProcess.md)
+- [Frida](./Frida.md)
