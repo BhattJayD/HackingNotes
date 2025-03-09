@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "FUZZING.md",
+                "file": "MobileApplicationPenetrationTestingNotes/AndroidUsefulCommands.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "FUZZING"
+              "title": "AndroidUsefulCommands"
             }
           },
           {
@@ -234,8 +234,9 @@
   },
   "active": "bf9871c3a709dfe0",
   "lastOpenFiles": [
-    "MobileApplicationPenetrationTestingNotes/Frida.md",
     "FUZZING.md",
+    "MobileApplicationPenetrationTestingNotes/AndroidUsefulCommands.md",
+    "MobileApplicationPenetrationTestingNotes/Frida.md",
     "Nmap/Nmap.md",
     "SQL_Injection/DVWA_Easy_Manualy_Dump.md",
     "Crasking.md",
@@ -277,7 +278,6 @@
     "SQL_Injection",
     "PrototypePollution",
     "Pasted.md",
-    "Pasted/ image/ 20230919202601.png.md",
     "Pasted/ image",
     "Pasted"
   ]
