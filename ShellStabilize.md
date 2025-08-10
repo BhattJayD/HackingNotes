@@ -1,3 +1,4 @@
+### With Python
 ```python3
 python3 -c "import pty;pty.spawn('/bin/bash')"
 ```
@@ -24,4 +25,13 @@ oneliner
 
 ```bash
 stty rows 47 columns 211;export TERM=xterm-256color;alias l="ls -lath --color"
+```
+
+### With script
+```bash
+script /dev/null -c bash
+```
+
+```bash
+stty raw -echo; fg; stty rows 47 columns 211; export TERM=xterm-256color; alias l='ls -lath --color'
 ```
